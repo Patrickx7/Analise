@@ -241,7 +241,7 @@ function App() {
                    onChange={(e) => setNewAnalysis({...newAnalysis, damage_type: e.target.value})}
                     >
                       <option value="simple">Simples</option>
-                      <option value="Moderado">Moderado</option>
+                      <option value="moderate">Moderado</option>
                       <option value="complex">Complexo</option>
                     </select>
                   </div>
