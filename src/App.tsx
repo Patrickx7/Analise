@@ -205,18 +205,6 @@ function App() {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Tipo de Dano
-                  </label>
-                  <input
-                    type="text"
-                    required
-                    className="w-full p-2 border border-gray-300 rounded-lg"
-                    value={newAnalysis.damage_type}
-                    onChange={(e) => setNewAnalysis({...newAnalysis, damage_type: e.target.value})}
-                  />
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
                     Análise
                   </label>
                   <textarea
@@ -247,9 +235,10 @@ function App() {
                       Severidade
                     </label>
                     <select
-                      className="w-full p-2 border border-gray-300 rounded-lg"
-                      value={newAnalysis.severity}
-                      onChange={(e) => setNewAnalysis({...newAnalysis, severity: e.target.value as Analysis['severity']})}
+                   required
+                   className="w-full p-2 border border-gray-300 rounded-lg"
+                   value={newAnalysis.damage_type}
+                   onChange={(e) => setNewAnalysis({...newAnalysis, damage_type: e.target.value})}
                     >
                       <option value="simple">Simples</option>
                       <option value="moderate">Moderado</option>
